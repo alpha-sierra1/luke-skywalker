@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  color: white;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  background-color: rgb(32, 31, 31);
+}
+
+#container {
+  border: 1px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 70vw;
+  height: 100vh;
+  gap: 10px;
+  padding: 30px;
+}
+.svg-tag1,
+.svg-tag2,
+.svg-tag3,
+.svg-tag4,
+.svg-tag5 {
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  color: green;
+  padding: 5px;
+  background-color: #000;
+  border-radius: 4px;
+}
+.svg-box2,
+.svg-box3,
+.svg-box4,
+.svg-box5 {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.box-grid-4 {
+  display: grid;
+  border: 1px solid black;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+.grid-item {
+  border: 1px solid black;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.image-4 {
+  height: 200px;
+  width: 230px;
+}
+.gallery-img {
+  height: 30px;
+}
+.authentication-img {
+  height: 200px;
+  width: 250px;
+  /* transform: scale(1); */
+  /* z-index: -1; */
+}
+.image-5 {
+  height: 200px;
+  width: 230px;
+  /* margin: -10; */
+
+  display: block;
+}
+
+.title-1 {
+  font-size: 25px;
+}
+.checkMark {
+  height: 20px;
+  width: 20px;
+}
+.content-3 {
+  display: flex;
+  align-items: center;
+}
+
+#blah {
+  display: flex;
+}
+
+.image-1 {
+  height: 250px;
+  width: 200px;
+}
+
+.image-1 img {
+  height: 100%;
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box6 {
+  border: 1px solid #000;
+  background-color: rgb(41, 41, 41);
+  border-radius: 5px;
+}
+#box1 {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+}
+#box2 {
+  grid-column: 3;
+}
+
+#box3 {
+  grid-column: 4;
+}
+
+#box4 {
+  grid-column: 1;
+}
+
+#box5 {
+  grid-column: 2;
+}
+#box6 {
+  grid-column: span 2;
+}
+
+.svg-tag {
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  color: green;
+  padding: 5px;
+  background-color: #000;
+  border-radius: 4px;
+}
+.svg-tag6 {
+  height: 30px;
+  width: 30px;
+}
+.sources {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
