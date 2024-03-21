@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.ribbon-svg {
+  height: 20px;
+  width: 20px;
+  /* display: flex;
+  align-items: center; */
+}
+.navigation-ribbon {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  color: white;
+  border: 1px solid rgba(0, 0, 255, 0.79);
+  padding: 10px;
+  background-color: rgba(0, 0, 255, 0.683);
+}
+.ribbon-url {
+  color: white;
+}
+.logo-picture {
+  height: 50px;
+  width: 150px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  /* flex-direction: column; */
+}
+.nav-list ul {
+  display: flex;
+  gap: 15px;
+  font-style: italic;
+  align-items: center;
+  font-size: 15px;
+  list-style: none;
+}
+.nav-list ul li:nth-child(6) {
+  color: white;
+  background-color: black;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+main {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 80vw;
+  margin: 0 auto;
+}
+.hero-first-half {
+  display: flex;
+  align-items: center;
+  /* gap: 50px; */
+}
+.hero-box-ul {
+  /* display: flex; */
+  list-style: none;
+  gap: 10px;
+}
+.hero-box-ul h2,
+.hero-box-ul p,
+.hero-box-ul button {
+  margin-top: 20px;
+}
+.features-ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-img-box {
+  height: 200px;
+  /* padding: 30px; */
+}
+.hero-box-ul ul li:nth-child(1) {
+  background-color: rgba(0, 0, 255, 0.683);
+  padding: 10px;
+  color: white;
+  border-radius: 15px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.hero-box-ul ul li:nth-child(2) {
+  color: blueviolet;
+}
+.hero-box-ul ul li:nth-child(3) {
+  color: rgba(0, 0, 255, 0.683);
+}
+.hero-box-ul ul li:nth-child(4) {
+  color: pink;
+}
+.hero-box-ul ul li:nth-child(5) {
+  color: brown;
+}
+
+.hero-button {
+  border: 1px solid red;
+  border-radius: 20px;
+  color: white;
+  font-size: 15px;
+  font-style: italic;
+  padding: 10px;
+  background-color: rgba(255, 0, 0, 0.885);
+}
+.hero-box-ul2 ul {
+  display: flex;
+  list-style: none;
+  /* justify-content: end; */
+  align-items: end;
+}
