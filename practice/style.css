@@ -1,0 +1,81 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap") */
+/* why when i try to import google font in CSS, it gives error saying media query required */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Inter, "sans-serif";
+  font-weight: 500;
+  /* background-color: rgba(0, 0, 0, 0.497); */
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.7),
+      rgba(17, 19, 19, 0.585)
+    ),
+    url("./nature-img.avif");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+}
+.emoji-container {
+  text-align: center;
+  margin-top: 20px;
+}
+.frown-svg {
+  height: 60px;
+  width: 60px;
+  color: yellow;
+  /* margin: 0 auto; */
+  /* text-align: center; */
+}
+
+/* why yellow color is not being applied on web desginer text */
+/* .color-tag {
+  color: yellow;
+} */
+
+.name-text p {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+.sean-work {
+  text-align: center;
+  width: 30vw;
+  margin: 0 auto;
+  color: rgba(173, 170, 170, 0.598);
+  margin-top: 40px;
+  line-height: 1.5;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+.horizontal-line-container {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.horizontal-line-container::before,
+.horizontal-line-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  /* margin: 0 auto; */
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.349);
+}
+
+.horizontal-line-container::before {
+  top: 0;
+}
+
+.horizontal-line-container::after {
+  bottom: 0;
+}
+
+.content {
+  text-align: center;
+  padding: 20px 0;
+}
