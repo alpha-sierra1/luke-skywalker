@@ -7,9 +7,9 @@
 html {
   font-size: 62.5%;
 }
-.container {
+body {
   width: 100vw;
-
+  background-size: cover;
   height: 100vh;
   background-image: linear-gradient(
       to bottom,
@@ -70,7 +70,14 @@ main div {
 main div h1 {
   cursor: pointer;
 }
-#box:hover {
+#box:nth-child(1) h1:hover ~ body {
   background-image: url("./random-restro.webp");
-  background-size: cover;
+}
+
+#box:nth-child(2) h1:hover ~ body {
+  background-image: url("./theBar-pic.jpeg");
+}
+
+#box:nth-child(3) h1:hover ~ body {
+  background-image: url("./random-restro.webp");
 }
