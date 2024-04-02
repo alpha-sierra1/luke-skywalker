@@ -83,11 +83,27 @@ function addTask() {
   const span = document.createElement("span");
   span.textContent = taskText;
 
+  // edit button
+
   const editButton = document.createElement("button");
   editButton.textContent = "Edit";
   editButton.addEventListener("click", function () {
-    editTask(li);
+    const inputField = document.createElement("input");
+    inputField.type = "text";
+    inputField.value = span.textContent;
+
+    li.replaceChild(inputField, span);
+
+    inputField.focus();
+
+    inputField.addEventListener("blur", function () {
+      span.textContent = inputField.value;
+
+      li.replaceChild(span, inputField);
+    });
   });
+
+  // DELETE BUTTON
 
   const deleteButton = document.createElement("button");
   deleteButton.textContent = "Delete";
