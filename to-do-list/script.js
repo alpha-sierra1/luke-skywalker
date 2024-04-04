@@ -108,7 +108,7 @@ function addTask() {
   const deleteButton = document.createElement("button");
   deleteButton.textContent = "Delete";
   deleteButton.addEventListener("click", function () {
-    deleteTask(li);
+    li.remove();
   });
 
   li.appendChild(checkbox);
