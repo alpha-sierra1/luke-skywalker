@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    #cart {
+      margin-bottom: 20px;
+    }
+
+    .cart-item {
+      /* border-bottom: 1px solid #ccc; */
+      padding: 10px 0;
+    }
+
+    .cart-item button {
+      margin-left: 10px;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <h1>Shopping Cart</h1>
+      <div id="cart"></div>
+      <div>
+        <h2>Products</h2>
+        <button
+          class="addToCart"
+          data-id="1"
+          data-name="Product 1"
+          data-price="10"
+        >
+          Add Product 1
+        </button>
+        <button
+          class="addToCart"
+          data-id="2"
+          data-name="Product 2"
+          data-price="20"
+        >
+          Add Product 2
+        </button>
+      </div>
+    </div>
+    <script>
+      let cart = [];
+
+      function addItem(id, name, price) {
+        let existingItem = cart.find((item) => item.id === id);
+        if (existingItem) {
+          existingItem.quantity++;
+        } else {
+          cart.push({ id, name, price, quantity: 1 });
+        }
+        showCart();
+      }
+
+      function showCart() {
+        let cartHolder = document.getElementById("cart");
+        cartHolder.innerHTML = "";
+        for (let i = 0; i < cart.length; i++) {
+          let item = cart[i];
+          let itemElement = document.createElement("div");
+          itemElement.classList.add("cart-item");
+          itemElement.innerHTML = `
+          <span>${item.name} - Rs${item.price} x ${item.quantity}</span>`;
+          cartHolder.appendChild(itemElement);
+        }
+      }
+      const container = document.querySelector(".container");
+      container.addEventListener("click", function (event) {
+        if (event.target.classList.contains("addToCart")) {
+          let id = event.target.dataset.id;
+          let name = event.target.dataset.name;
+          let price = parseFloat(event.target.dataset.price);
+          addItem(id, name, price);
+        }
+      });
+    </script>
+  </body>
+</html>

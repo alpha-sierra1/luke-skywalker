@@ -1,3 +1,16 @@
+const sliceBread = (bread) => `${bread} is sliced`;
+
+const spreadButter = (bread) => `Butter spread on ${bread}`;
+
+const addFilling = (bread) => `Filling added to ${bread}`;
+
+const makeSandwich = (bread) => addFilling(spreadButter(sliceBread(bread)));
+
+console.log(makeSandwich("Whole Wheat"));
+
+const makeToast = (bread) => spreadButter(sliceBread(bread));
+console.log(makeToast("White Bread"));
+
 function add(a, b) {
   return a + b;
 }
